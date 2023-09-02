@@ -1,0 +1,15 @@
+baseURL: 'http://subract.github.io/'
+languageCode: 'en-us'
+title: "subract's blog"
+theme: 
+  - PaperMod
+  - hugo-shortcode-roneo-collection
+
+params:
+  defaultTheme: dark
+  # disableThemeToggle: true
+
+markup:
+  highlight:
+    style: catppuccin-macchiato
+    tabWidth: 2
