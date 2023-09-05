@@ -1,6 +1,6 @@
 ---
 title: "Protecting Backblaze B2 backups with app key capabilities"
-date: 2023-09-01T15:18:28-05:00
+date: 2023-08-15T15:18:28-05:00
 draft: false
 ---
 
