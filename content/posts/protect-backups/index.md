@@ -13,7 +13,7 @@ I've recently begun exposing some of my homelab services to the Internet for the
 
 This article specifically explains how to secure your backups in [Backblaze B2](https://www.backblaze.com/cloud-storage) to protect them even in the case that your server is compromised. I'll lay out the scenario using [rclone](https://rclone.org/) as the backup software, but the steps are applicable to most clients using B2's [application keys](https://www.backblaze.com/docs/cloud-storage-application-keys) to authenticate.
 
-# The problem: backup deletion
+## The problem: backup deletion
 
 Let's assume for a moment that a storage server is compromised. The server has a nightly cron job that pushes nightly backups to B2 with `rclone`. If the application key in question is one created through Backblaze web UI, it has the ability to delete files. The attacker can use the key to run `rclone delete --b2-hard-delete <bucket path>` and trash its data. So much for backups.
 
