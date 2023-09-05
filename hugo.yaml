@@ -1,13 +1,25 @@
-baseURL: 'http://subract.github.io/'
-languageCode: 'en-us'
-title: "subract's blog"
+baseURL: http://subract.github.io/
+languageCode: en-us
+title: subract's blog
+copyright: '©2023 subract. Post contents licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
 theme: 
   - PaperMod
   - hugo-shortcode-roneo-collection
 
 params:
   defaultTheme: dark
-  # disableThemeToggle: true
+  homeInfoParams:
+    Title: Welcome 👋
+    Content: |
+      I'm subract. This is my place to share what I'm learning and working on, mostly in my [homelab](https://github.com/subract/ansible).
+
+      Want to chat? Drop me a line via email (self@\<this domain\>) or Matrix.
+
+  socialIcons:
+    - name: github
+      url: https://github.com/subract
+    - name: matrix
+      url: https://matrix.to/#/@subract:matrix.org
 
 markup:
   highlight:

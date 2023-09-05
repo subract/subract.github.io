@@ -30,7 +30,7 @@ So if we create an app key that can *hide*, but not *delete* files, we can thwar
 
 Unfortunately, we can't do this from B2's web interface, which provides only three presets for the app key's capabilities. Even the "Write Only" preset includes permission to delete files. We have to use [the B2 CLI](https://www.backblaze.com/docs/cloud-storage-command-line-tools) for the task. You'll need to authenticate to it with an existing key that has the `writeKeys` capability - you can either use your master application key (not recommended), or make a new key with "Read and Write" access that's not limited to a particular bucket, as shown below:
 
-![Creating a Backblaze application key](create-app-key.png)
+![Creating a Backblaze application key](create-app-key.png#center)
 
 {{< box warning >}}
 **Powerful app keys**
@@ -86,7 +86,7 @@ Perfect! The old versions of our files are still present and recoverable, just h
 
 Of course, it would be nice not to pay to store every deleted file forever. You can use [B2's lifecycle rules](https://www.backblaze.com/docs/cloud-storage-lifecycle-rules) to  facilitate this. If, for example, you configure a bucket as shown below, hidden files will be kept for a month, then deleted permanently. In combination with our limited app key, this means you'd have a month to notice that your files were missing before they'd be unrecoverable:
 
-![B2 lifecycle settings](lifecycle-settings.png)
+![B2 lifecycle settings](lifecycle-settings.png#center)
 
 {{< box info >}}
 **Language clarification**

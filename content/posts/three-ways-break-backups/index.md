@@ -17,7 +17,7 @@ The backup in question is for the MariaDB database used by my homelab's Nextclou
 
 On July 1, 2023, I got a notification from [Healthchecks.io](https://healthchecks.io/) that one of my long-running backup cron jobs had failed:
 
-![Alert from Healthchecks.io](alert-1.png)
+![Alert from Healthchecks.io](alert-1.png#center)
 
 I'll give myself some credit here: setting up alerts for failing jobs prevented this issue from persisting much longer than it could have.
 
@@ -29,7 +29,7 @@ Unfortunately, this meant I was accustomed to ignoring occasional alerts - **mis
 
 Healthchecks can be configured to send daily email alerts for failing checks, which will be much harder for me to tune out.
 
-![Healthchecks.io settings](healthchecks-settings.png)
+![Healthchecks.io settings](healthchecks-settings.png#center)
 
 Of course, the true solution to [alert fatigue](https://en.wikipedia.org/wiki/Alarm_fatigue) is *fewer* alerts, not more. I should also spend some time investigating the transient backup failures. Maybe I should implement a nightly maintenance window in which my containers are shut down to avoid files changing during backup upload. I'm hesitant to increase the complexity of the backup process, though. I'll have to consider this further.
 
@@ -97,7 +97,7 @@ Maintenance mode disabled
 Disturbingly, my phone buzzed:
 
 
-![Second alert from Healthchecks.io](alert-2.png)
+![Second alert from Healthchecks.io](alert-2.png#center)
 
 Wait, what? The script clearly errored, so why wasn't it caught? Turns out, I had misunderstood the way bash handles errors with pipes, behavior that's [well-documented in the manual](https://www.gnu.org/software/bash/manual/html_node/Pipelines.html):
 
