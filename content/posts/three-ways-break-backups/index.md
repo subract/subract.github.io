@@ -4,6 +4,11 @@ date: 2023-07-22T21:17:53-05:00
 draft: false
 ---
 
+{{< box tip >}}
+**tl;dr:**
+Don't put yourself in a position where you ignore alerts. Don't update your software without reading release notes. And especially don't make assumptions about error handling in bash scripts!
+{{< /box >}}
+
 I recently discovered a failing backup that, upon deeper investigation, turned out to be a chain of three failures. I'll explore how it happened, why it went on for far longer than I initially thought, and what fixes I identified. It's my hope that this will serve both as an example of what not to do, and perhaps provide a timely reminder to someone to take a peek at their backups.
 
 The backup in question is for the MariaDB database used by my homelab's Nextcloud instance. In addition to metadata about the Nextcloud's files (which are themselves backed up by a separate job), this backup contains my calendar and contacts, two things I'd be rather irked about losing. The advice, however, is general enough to be applicable to other backups as well. I'm assuming a level of familiarity with Docker and bash scripting.
