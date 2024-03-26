@@ -9,7 +9,7 @@ In this article, I'll present an analysis of [Dashy](https://dashy.to/), a relat
 
 ![Dashy demo screenshot](dashy-demo.png#center)
 
-Screenshot of Dashy’s [official demo instance](https://demo.dashy.to/)
+Above: screenshot of Dashy’s [official demo instance](https://demo.dashy.to/)
 
 A quick primer on Dashy: It's an "open source, highly customizable, easy to use, privacy-respecting dashboard app." Dashy provides an extensive set of features for its purpose, including status monitoring, widgets, customizable layouts, most importantly for our discussion today, **authentication**.
 
@@ -94,7 +94,7 @@ There are various server-side mitigations that could be applied to prevent any c
 
 I believe Dashy has both a *security problem* and a *communication problem*. Not every application needs to provide strong authentication! There are a multitude of ways to secure an web app - not exposing it to the Internet is a good start, and reverse proxies tied in with auth providers can provide strong authentication before a user is allowed to access the application in the first place.
 
-To its credit, the Dashy docs [recommend several good options](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/authentication.md#alternative-authentication-methods) for securing a Dashy instance. Unfortunately, their buried under "Alternative Authentication Methods" on the Authentication documentation page.
+To its credit, the Dashy docs [recommend several good options](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/authentication.md#alternative-authentication-methods) for securing a Dashy instance. Unfortunately, they're buried under "Alternative Authentication Methods" on the Authentication documentation page.
 
 Indeed, digging further into Dashy's documentation reveals a wealth of knowledge on securing a Dashy deployment. The app management page has [an extensive section](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/management.md#container-security) on securing a containerized Dashy deployment. The privacy and security page has a [section](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/privacy.md#security-features) on the app's security features, and links to the primary author's excellent [Personal Security Checklist](https://github.com/Lissy93/personal-security-checklist). The care given to security in many parts of the app makes the paper-thin authentication an anachronism.
 
