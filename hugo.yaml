@@ -20,6 +20,8 @@ params:
       url: https://github.com/subract
     - name: matrix
       url: https://matrix.to/#/@subract:matrix.org
+    - name: rss
+      url: https://subract.dev/index.xml
 
 markup:
   highlight:
