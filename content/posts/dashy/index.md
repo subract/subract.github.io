@@ -1,9 +1,9 @@
 ---
 title: "False security: Dashy's client-side authentication"
-date: 2024-03-26T14:28:53-06:00
+date: 2024-03-27T12:16:00-06:00
 ---
 
-In this article, I'll present an analysis of [Dashy](https://dashy.to/), a popular (14.6k GitHub stars) personal dashboard designed for self-hosters. We'll examine the (lack of) security with its authentication scheme that leads to unauthenticated users being able to read *and write* to its configuration, but just as importantly, we'll take a look at *how it communicates about its security*. I aim to encourage users to think critically about the apps they use and to encourage developers to think carefully about how they communicate their app's security guarantees to users.
+About a month ago, I went looking for a dashboard for my [homelab](https://github.com/subract/ansible)—something to help visualize the services I run. I found [Dashy](https://dashy.to/), a popular (14.6k GitHub stars) dashboard designed for self-hosters. I deployed it and started configuring it, but noticed that something about its authentication felt *off*. I started digging and quickly found its security to be borderline useless, permitting unauthenticated reads *and writes* of its configuration. I'm sharing my findings here with the goals of encouraging self-hosters to think critically about their apps and to encourage developers to document their app's security with care.
 
 ## Dashy who?
 
