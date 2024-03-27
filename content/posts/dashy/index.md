@@ -11,7 +11,7 @@ In this article, I'll present an analysis of [Dashy](https://dashy.to/), a popul
 
 Above: screenshot of Dashy’s [official demo instance](https://demo.dashy.to/)
 
-A quick primer: Dashy's an "open source, highly customizable, easy to use, privacy-respecting dashboard app." Dashy provides an extensive set of features for its purpose, including status monitoring, widgets, customizable layouts, most importantly for our discussion today, **authentication**.
+A quick primer: Dashy's an "open source, highly customizable, easy to use, privacy-respecting dashboard app." Dashy provides an extensive set of features for its purpose, including status monitoring, widgets, customizable layouts, and most importantly for our discussion today, **authentication**.
 
 On Dashy's [main README](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/README.md#authentication-), it claims the following:
 
@@ -92,7 +92,7 @@ An admin could apply various server-side mitigations to prevent any config chang
 
 ## Mixed messages
 
-I believe Dashy has both a *security problem* and a *communication problem*. Not every app needs to provide strong authentication on its own. Other ways to secure a web app exist, like reverse proxies tied in with auth providers that can provide strong authentication before a allowing user to access the app in the first place.
+I believe Dashy has both a *security problem* and a *communication problem*. Not every app needs to provide strong authentication on its own. Other ways to secure a web app exist, like reverse proxies tied in with auth providers that can provide strong authentication before allowing user to access the app in the first place.
 
 To its credit, the Dashy docs [recommend several good options](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/authentication.md#alternative-authentication-methods) for securing a Dashy instance, but they're buried under "Alternative Authentication Methods" on the Authentication documentation page.
 
