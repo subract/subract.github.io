@@ -3,7 +3,11 @@ title: "False security: Dashy's client-side authentication"
 date: 2024-03-27T12:16:00-06:00
 ---
 
+**Update 3/27**: I've found a GitHub issue indicating devs may be working on the issues I raise here. See details [below]({{< ref "#a-positive-change" >}} "update")
+
 About a month ago, I went looking for a dashboard for my [homelab](https://github.com/subract/ansible)—something to help visualize the services I run. I found [Dashy](https://dashy.to/), a popular (14.6k GitHub stars) dashboard designed for self-hosters. I deployed it and started configuring it, but noticed that something about its authentication felt *off*. I started digging and quickly found its security to be borderline useless, permitting unauthenticated reads *and writes* of its configuration. I'm sharing my findings here with the goals of encouraging self-hosters to think critically about their apps and to encourage developers to document their app's security with care.
+
+
 
 ## Dashy who?
 
@@ -116,6 +120,12 @@ Before publishing this post, I wrote an email to [the repo's security contact em
 Four hours later, [a new commit](https://github.com/Lissy93/dashy/commit/0894f71056d50cd787a532312691b8e488c05faa) appeared adding a prominent disclaimer to the authentication documentation page noting that the built-in auth isn't intended to protect instances on the Internet and directing users to use a reverse proxy or VPN.
 
 I applaud this change, but I don't think it goes nearly far enough. The main README is still the same, as are the other docs cited above. I didn't receive a reply to my email or to a follow-up sent 11 days later.
+
+{{< box info >}}
+**Update**
+
+I've just now found [an existing issue](https://github.com/Lissy93/dashy/issues/668) on the repo that raises these issues, posted in 2022. The primary dev asserts they're aware of the issue and hoped to address it in v2.1.2, which has already been released. I'll update this post further if/when those changes are completed. Until then, the issues raised and my recommendations stand.
+{{< /box >}}
 
 ## Recommendations
 
