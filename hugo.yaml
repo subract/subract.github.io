@@ -7,7 +7,10 @@ theme:
   - hugo-shortcode-roneo-collection
 
 params:
+  author: ["subract"]
   defaultTheme: dark
+  ShowReadingTime: true
+  ShowToc: true
   homeInfoParams:
     Title: Welcome 👋
     Content: |
@@ -21,7 +24,7 @@ params:
     - name: matrix
       url: https://matrix.to/#/@subract:matrix.org
     - name: rss
-      url: https://subract.dev/index.xml
+      url: /index.xml
 
 markup:
   highlight:
