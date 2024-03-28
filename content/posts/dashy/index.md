@@ -3,7 +3,7 @@ title: "False security: Dashy's client-side authentication"
 date: 2024-03-27T12:16:00-06:00
 ---
 
-**Update 3/27**: I've found a GitHub issue indicating devs may be working on the issues I raise here. See details [below]({{< ref "#a-positive-change" >}} "update")
+**Update 3/28**: The devs have announced that the auth system is to be deprecated. See details [below]({{< ref "#a-positive-change" >}} "update").
 
 About a month ago, I went looking for a dashboard for my [homelab](https://github.com/subract/ansible)—something to help visualize the services I run. I found [Dashy](https://dashy.to/), a popular (14.6k GitHub stars) dashboard designed for self-hosters. I deployed it and started configuring it, but noticed that something about its authentication felt *off*. I started digging and quickly found its security to be borderline useless, permitting unauthenticated reads *and writes* of its configuration. I'm sharing my findings here with the goals of encouraging self-hosters to think critically about their apps and to encourage developers to document their app's security with care.
 
@@ -122,9 +122,15 @@ Four hours later, [a new commit](https://github.com/Lissy93/dashy/commit/0894f71
 I applaud this change, but I don't think it goes nearly far enough. The main README is still the same, as are the other docs cited above. I didn't receive a reply to my email or to a follow-up sent 11 days later.
 
 {{< box info >}}
-**Update**
+**Update 3/27**
 
 I've just now found [an existing issue](https://github.com/Lissy93/dashy/issues/668) on the repo that raises these issues, posted in 2022. The primary dev asserts they're aware of the issue and hoped to address it in v2.1.2, which has already been released. I'll update this post further if/when those changes are completed. Until then, the issues raised and my recommendations stand.
+
+**Update 3/28**
+
+The key developer has announced the **deprecation of built-in auth entirely**, which really resolves all my converns once implemented. This announcement was made on **Feb 22**, six days after my initial email was sent, but since it's rather buried in the GitHub discussions (and my email received no reply), I had no idea until [a maintainer finally dropped me a lnk](https://github.com/Lissy93/dashy/issues/668#issuecomment-2024390223). 
+
+This is exactly the change I hoped to see. Again, I'll update this article if/when the changes are implemented.
 {{< /box >}}
 
 ## Recommendations
