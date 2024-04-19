@@ -36,6 +36,8 @@ Dashy supports multiple users per instance and provides [granular access control
 {{< box info >}}
 **Get the flag**
 
+**Update 4/19**: I've **decommisioned** my demo instances, since they've pretty much run their course. You can always download Dashy yourself to test out the exploits!
+
 Before we get into why Dashy's authentication doesn't protect your dashboard in the way you might expect, I offer a challenge for the curious:
 
 I've stood up two demo instances, both running the latest version as of the time of writing (v2.1.2, Mar 27, 2024). Dashy's [built-in authentication](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/authentication.md#built-in-auth) protects the first, while [its Keycloak integration](https://github.com/Lissy93/dashy/blob/165809000840835720e444523a9e1c2eb478f1f9/docs/authentication.md#keycloak) protects the second.
@@ -44,8 +46,8 @@ Each has a flag hidden on the dashboard. Feel free to poke around and try to rec
 
 I ask that you not attempt to exploit my demo instances further than reaching the flags. Feel free to spin up your own server for that.
 
-- [Demo 1: Built-in auth](https://dashy-demo.subract.dev)
-- [Demo 2: Keycloak](https://dashy-demo-keycloak.subract.dev)
+- [~~Demo 1: Built-in auth~~](https://dashy-demo.subract.dev)
+- [~~Demo 2: Keycloak~~](https://dashy-demo-keycloak.subract.dev)
 {{< /box >}}
 
 In brief, Dashy's access control works like this:
