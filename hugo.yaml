@@ -1,7 +1,7 @@
 baseURL: http://subract.github.io/
 languageCode: en-us
 title: subract's blog
-copyright: '©2023 subract. Post contents licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
+copyright: '©2025 subract. Post contents licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
 theme: 
   - PaperMod
   - hugo-shortcode-roneo-collection
