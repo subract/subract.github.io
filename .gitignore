@@ -14,3 +14,6 @@ hugo.linux
 
 # Vale files
 styles/
+
+# MacOS
+.DS_Store
