@@ -150,7 +150,7 @@ To figure that out, I had to troubleshoot why the `mysqldump` command was failin
 
 I checked the date [on the release](https://mariadb.com/kb/en/mariadb-11-0-1-release-notes/): **February 22, 2023**.
 
-At last, the magnitude of my failure was at last lade bare. As best I can tell, my backups have been failing for around half a year, and I had no idea until a *completely independent* failure finally triggered an alert - which I then ignored for three weeks.
+At last, the magnitude of my failure was laid bare. As best I can tell, my backups have been failing for around half a year, and I had no idea until a *completely independent* failure finally triggered an alert - which I then ignored for three weeks.
 
 ### Fix action #3
 
